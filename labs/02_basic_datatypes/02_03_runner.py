@@ -1,36 +1,20 @@
-'''
+"""
 
 If a runner runs 10 miles in 30 minites and 30 seconds,
-What is his/her average speed in kilometers per hour? (Tip: 1 mile = 1.6 km)
+What is his/her average speed in kilometers per hour? (Tip: 1 mile = 1.6 km"""
 
-    ''''
-Fahrenheit to Celsius:
-
-Write the necessary code to read a degree in Fahrenheit from the console
-then convert it to Celsius and print it to the console.
-    
-    C = (F - 32) * (5 / 9)
-
-Output should read like - "81.32 degrees fahrenheit = 27.4 degrees celsius"
+kilometers = float(10 * 1.6)
+percent_hour = float(30.5 / 60)
+kph = kilometers * percent_hour
+print(f'10 miles in 30 minutes and 30 seconds is equal to %.2f kilometers per hour' % kph)
 
 
-Demonstrate how to:
+# or as a function
+def mph_to_kph(miles, minutes):
+    kilomters = float(1.6 * miles)
+    percent_hours = float(minutes / 60)
+    kph = kilometers * percent_hours
+    print(f'{miles} miles in {minutes} minutes is equal to {kph:.2f}.')
 
-1) Convert an int to a float
-2) Convert a float to an int
-3) Perform floor division using a float and an int.
-4) Use two user inputted values to perform multiplication.
 
-Take note of what information is lost when some conversions take place.
-    
-    '''
-        '''
-    Take in the following three values from the user:
-    - investment amount
-    - interest rate in percentage
-    - number of years to invest
-    
-    Print the future values to the console.
-    
-    '''
-        '''''
+mph_to_kph(10, 30.5)

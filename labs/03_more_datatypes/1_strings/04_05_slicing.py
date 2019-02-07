@@ -7,3 +7,7 @@ translated to pig latin by moving the first letter to the end, followed by "ay".
 For example: ryan -> yanray, caden -> adencay
 
 '''
+
+name = input("Please type a name: ")
+pig_name= print(name[1:] + name.lower()[0] + "ay")
+

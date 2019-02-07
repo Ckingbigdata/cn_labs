@@ -4,3 +4,8 @@ create a list of all the words in the string and print the word with the most
 occurrences.
 
 '''
+
+user_input = input("Type a string here: ")
+from collections import Counter
+c = Counter(user_input.split())
+c.most_common()

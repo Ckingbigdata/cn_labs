@@ -28,4 +28,7 @@ Take note of what information is lost when some conversions take place.
     Print the future values to the console.
     
     '''
-'''
+
+f= float(input("Enter a temperature in degrees Farenheit: "))
+c = (f-32) * (5/9)
+print(f'{f} degrees Fareheit equals {c:.2f} degrees Celcius')
